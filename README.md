@@ -19,7 +19,7 @@ If LESS is not for you, do not worry, the included CSS files are well commented 
 
 Deploying the theme is really simple:
 
-1. Copy the symplectic-bootstrap folder into the "themes" directory in your VIVO root.
+1. Copy the symplectic-bootstrapped-vivo folder into the "themes" directory in your VIVO root.
 2. Build and deploy VIVO with Ant
 
     `ant all`
@@ -37,13 +37,13 @@ Deploying the theme is really simple:
     ~~~
 
 4. Login to VIVO via a browser and head to the **_Site Admin_** page and choose **_Site Information_**
-5. Use the theme dropdown to select **_symplectic-bootstrap_**. If you don't see it there, repeat steps 2 & 3.
+5. Use the theme dropdown to select **_symplectic-bootstrapped-vivo_**. If you don't see it there, repeat steps 2 & 3.
 
 ###Making changes
 The theme folder is structured as follows:
     
     
-    |symplectic-bootstrap
+    |symplectic-bootstrapped-vivo
     |---css
         |---LESS
         |--openSocial
