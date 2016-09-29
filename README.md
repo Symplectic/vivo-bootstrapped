@@ -5,7 +5,7 @@ If you need a detailed explanation of setting up the VIVO environment, consult t
 [VIVO installation instructions](https://wiki.duraspace.org/display/VIVODOC19x/Installing+VIVO).
 
 ##Prerequisites
-You must have a working VIVO installation. Though this theme has been tested in the standard VIVO build, we recommend the [three-tier](https://wiki.duraspace.org/display/VTDA/Building+VIVO+in+3+tiers) installation so that future updates to VIVO will not adversely effect the look and feel of the theme.
+You must have a working VIVO installation. Though this theme has been tested in the standard VIVO 1.8.1 build, we recommend the [three-tier](https://wiki.duraspace.org/display/VTDA/Building+VIVO+in+3+tiers) installation so that future updates to VIVO will not adversely effect the look and feel of the theme.
 
 This theme uses [bootstrap](http://getbootstrap.com), the greatest framework invented for making a web project responsive. If you want to change the layout of the template files included in this theme, we recommend that you [read a bit more](https://getbootstrap.com/components/) about how the framework works.
 
