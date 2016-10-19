@@ -14,7 +14,7 @@
 
 <#if (isAuthor || isInvestigator)>
  
-    ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/css/visualization/visualization.css" />')}
+   <#-- ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/css/visualization/visualization.css" />')} -->
     <#assign standardVisualizationURLRoot ="/visualization">
         
         <#if isAuthor>
