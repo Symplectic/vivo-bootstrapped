@@ -51,7 +51,7 @@
 				<#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
 				<#assign verbose = (verbosePropertySwitch.currentValue)!false>
 				<div id="${groupNameHtmlId?replace("/","-")}" class="tab-pane fade in <#if (sectionCount > 1) ><#else>active</#if>" role="tabpanel">
-				<#-- Display the group heading --> 
+				<#-- Display the group heading -->
 					<#if groupName?has_content>
 						<#--the function replaces spaces in the name with underscores, also called for the property group menu-->
 						<#assign groupNameHtmlId = p.createPropertyGroupHtmlId(groupName) >
@@ -91,5 +91,6 @@ ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/css/individual/indi
 ${headScripts.add('<script type="text/javascript" src="${urls.base}/js/amplify/amplify.store.min.js"></script>')}
 ${scripts.add('<script type="text/javascript" src="${urls.base}/js/individual/propertyGroupControls.js"></script>')}
 ${scripts.add('<script type="text/javascript" src="${urls.theme}/js/showcase.js""></script>')}
+${scripts.add('<script type="text/javascript" src="${urls.theme}/js/publonsAuthorWidget.js""></script>')}
 ${scripts.add('<script type="text/javascript" src="${urls.theme}/js/resultsNav.js""></script>')}
 ${scripts.add('<script type="text/javascript" src="${urls.theme}/js/readshare.js""></script>')}
