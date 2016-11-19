@@ -8,4 +8,4 @@
     </#if>
 </#if>
 
-<! -- /Publons article badge -->
+<!-- /Publons article badge -->
