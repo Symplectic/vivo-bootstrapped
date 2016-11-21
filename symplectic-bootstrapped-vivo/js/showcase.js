@@ -1,10 +1,11 @@
 
+
 links = $('.individual-urls').find('a');
 for (k = 0; k < links.length; k++)
 {
- 
+
   if (links[k].href.includes("figshare"))
-     {//console.log(links[k].href);     
+     {//console.log(links[k].href);
       var figsharecontent;
       var figshareyql = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%27"+ encodeURI(links[k].href)+"%27%20and%20xpath%3D%27%2F%2Fscript%5B%40id%20%3D%20%22app-data%22%5D%27&format=json";
       $.getJSON(figshareyql,
@@ -12,7 +13,7 @@ for (k = 0; k < links.length; k++)
                                 //console.log(figsharecontent);
 
                                 figItems = JSON.parse(figsharecontent).items.items;
-                                for (i = 0; i < figItems.length; i++) { 
+                                for (i = 0; i < figItems.length; i++) {
                                      // console.log(figItems[i].data.id);
                                      $.getJSON("https://api.figshare.com/v2/articles/"+figItems[i].data.id,
                                       function(res) {
@@ -36,7 +37,7 @@ for (k = 0; k < links.length; k++)
                                       }, "jsonp");
                                  }
                   }, "jsonp" );
-      
+
 
     }
    if (links[k].href.includes("theconversation"))
@@ -68,8 +69,8 @@ for (k = 0; k < links.length; k++)
        var yql = "https://query.yahooapis.com/v1/public/yql?q=select%20title%2C%20%20content%2C%20link%20from%20atom%20where%20url%3D%22" +
                  encodeURI(links[k].href + '/articles.atom')+
                  "%22&format=json&callback=";
-       $.getJSON(yql, function(res) {      var entries = []; 
-                                           if (typeof res.query.results.entry.length == "undefined" ) {entries = [res.query.results.entry]; console.log(entries);} 
+       $.getJSON(yql, function(res) {      var entries = [];
+                                           if (typeof res.query.results.entry.length == "undefined" ) {entries = [res.query.results.entry]; console.log(entries);}
                                                 else entries = res.query.results.entry;
                                            console.log("entries[0]"); console.log(entries[0]);
                                            for (i = 0; i < entries.length; i++) { console.log(i);
@@ -95,9 +96,9 @@ for (k = 0; k < links.length; k++)
                                                            }
                                                   _altmetric_embed_init();
                       }, "jsonp");
-        
-       
-       
+
+
+
    }
- 
+
 }

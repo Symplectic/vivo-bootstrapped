@@ -10,12 +10,13 @@
 
 <#assign individualProductExtensionPreHeader>
     <#include "individual-altmetric.ftl">
+    <#include "individual-publons.ftl">
 </#assign>
 
 <#assign individualProductExtension>
     <#-- Include for any class specific template additions -->
     ${classSpecificExtension!}
-    ${departmentalGrantsExtension!} 
+    ${departmentalGrantsExtension!}
     <!--PREINDIVIDUAL OVERVIEW.FTL-->
     <#include "individual-vocabularyService.ftl">
     <#include "individual-webpage.ftl">
@@ -27,9 +28,9 @@
 </#assign>
 
 <#if individual.conceptSubclass() >
-    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#broader")!> 
-    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#narrower")!> 
-    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#related")!> 
+    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#broader")!>
+    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#narrower")!>
+    <#assign overview = propertyGroups.pullProperty("http://www.w3.org/2004/02/skos/core#related")!>
 </#if>
 
 <#-- $This file is distributed under the terms of the license in /doc/license.txt$ -->
@@ -96,13 +97,13 @@
     <#else>
             </section> <!-- individual-info -->
         </section> <!-- individual-intro -->
-    </#if> 
+    </#if>
          <div id="readcube" class="embed-responsive embed-responsive-4by3">
             <iframe src="http://www.readcube.com/articles/10.1038/ni.3298" class="embed-responsive-item"></iframe>
          </div>
        </div>
 
-    
+
        <div class="col-sm-3">
           <#if individualProductExtensionPreHeader??>
             ${individualProductExtensionPreHeader}
