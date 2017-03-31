@@ -70,7 +70,7 @@ The templates folder contains 39 template files. These are all of the VIVO templ
 As mentioned above, most of the site colours can be changed in the **_vars.less_** file contained in the less folder, but you will need a LESS compiler handy.
 
 ###Using Readcube, Altmetric & figshare integrations
-This theme also includes integrations with Symplectic's sister companies, [figshare](http://figshare.com), [Altmetric](http://altmetric.com) & [Readcube](http://readcube.com). These integrations allow visitors to view the Altmetric score on research records, and if the record is available on figshare or readcube, use their appropriate embedded viewers to explore them further.
+This theme also includes integrations with other Digital Science products, [figshare](http://figshare.com), [Altmetric](http://altmetric.com) & [Readcube](http://readcube.com). These integrations allow visitors to view the Altmetric score on research records, and if the record is available on figshare or readcube, use their appropriate embedded viewers to explore them further.
 
 These integrations are reliant on VIVO referencing the DOI of a record, which does not currently come included in a standard VIVO installation. If you would like these integrations to work as expected, you will need to replace the **_listViewConfig-authorInAuthorship.xml_** file in your [VIVO-root]/productMods/config directory, with the one included in this repo.
 
