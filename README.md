@@ -79,6 +79,7 @@ This theme also includes integrations with other Digital Science products, [figs
 These integrations are reliant on VIVO referencing the DOI of a record, which does not currently come included in a standard VIVO installation. If you would like these integrations to work as expected, you will need to replace the **_listViewConfig-authorInAuthorship.xml_** file in your [VIVO-root]/productMods/config directory, with the one included in this repo.
 
 ###Fix for Map of Science throwing jQuery version errors
+
 The later versions of jQuery required for Bootstrap appear to be clashing with the blockui jQuery plugin required for Map Of Science. You can fix this by removing the existing blockUI JS files in your [VIVO-root]/js/jquery_plugins folder and replacing it with the blockUI file included in this repo.
 
 ##License & Attribution
