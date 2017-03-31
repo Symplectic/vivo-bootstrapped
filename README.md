@@ -1,10 +1,12 @@
 #The Symplectic Bootstrapped VIVO Theme
+
 This repository contains the necessary template files for customizing the stock [VIVO](http://vivoweb.org/) interface to make it responsive and modern. You can read more about the release on the [Symplectic website](http://symplectic.co.uk/press/reimagining-research-profile-design-bootstrapped-vivo/). The theme was first presented at the VIVO Conference 2016, you can find the slides on [figshare](https://figshare.com/articles/Pimp_My_VIVO_Slides/3798105).
 
 If you need a detailed explanation of setting up the VIVO environment, consult the
 [VIVO installation instructions](https://wiki.duraspace.org/display/VIVODOC19x/Installing+VIVO).
 
 ##Prerequisites
+
 You must have a working VIVO installation. Though this theme has been tested in the standard VIVO 1.8.1 build, we recommend the [three-tier](https://wiki.duraspace.org/display/VTDA/Building+VIVO+in+3+tiers) installation so that future updates to VIVO will not adversely effect the look and feel of the theme.
 
 This theme uses [bootstrap](http://getbootstrap.com), the greatest framework invented for making a web project responsive. If you want to change the layout of the template files included in this theme, we recommend that you [read a bit more](https://getbootstrap.com/components/) about how the framework works.
@@ -40,6 +42,7 @@ Deploying the theme is really simple:
 5. Use the theme dropdown to select **_symplectic-bootstrapped-vivo_**. If you don't see it there, repeat steps 2 & 3.
 
 ###Making changes
+
 The theme folder is structured as follows:
     
     
@@ -70,6 +73,7 @@ The templates folder contains 39 template files. These are all of the VIVO templ
 As mentioned above, most of the site colours can be changed in the **_vars.less_** file contained in the less folder, but you will need a LESS compiler handy.
 
 ###Using Readcube, Altmetric & figshare integrations
+
 This theme also includes integrations with other Digital Science products, [figshare](http://figshare.com), [Altmetric](http://altmetric.com) & [Readcube](http://readcube.com). These integrations allow visitors to view the Altmetric score on research records, and if the record is available on figshare or readcube, use their appropriate embedded viewers to explore them further.
 
 These integrations are reliant on VIVO referencing the DOI of a record, which does not currently come included in a standard VIVO installation. If you would like these integrations to work as expected, you will need to replace the **_listViewConfig-authorInAuthorship.xml_** file in your [VIVO-root]/productMods/config directory, with the one included in this repo.
@@ -82,11 +86,13 @@ The later versions of jQuery required for Bootstrap appear to be clashing with t
 This theme is released under the terms of the Mozilla Public License, v. 2.0 and is a copyright of [Symplectic](http://symplectic.co.uk). If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. Boiled down to smaller chunks, it can be described with the following conditions:
 
 ###This licence allows you to:
+
 * Freely download, modify and use the Symplectic Bootstrap theme, in whole or in part, for personal, company internal or commercial purposes.
 
 * Use the theme in packages or distributions that you create.
 
 ###This licence forbids you to:
+
 * Hold the authors and license owners liable for damages as the theme is provided without warranty.
 
 * Hold the creators or copyright holders of the theme, VIVO or Bootstrap liable.
@@ -94,8 +100,10 @@ This theme is released under the terms of the Mozilla Public License, v. 2.0 and
 * Use any marks owned by Symplectic in any way that might state or imply that Symplectic endorses your distribution.
 
 ###This licence does not require you to:
+
 * Submit changes that you make to the theme back to the Symplectic project (though such feedback is always encouraged).
 
 ###External Attribution
+
 This project would not have been possible without the help of the [Bootstrap framework](http://getbootstrap.com/getting-started/#license-faqs). Their full licence is available on the Bootstrap project [repository](https://github.com/twbs/bootstrap/blob/master/LICENSE).
 
