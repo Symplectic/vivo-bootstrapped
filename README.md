@@ -79,7 +79,7 @@ The later versions of jQuery required for Bootstrap appear to be clashing with t
 
 ##License & Attribution
 
-This theme is released under the terms of the Mozilla Public License, v. 2.0 and is a copyright of [Symplectic Limited](http://symplectic.co.uk). If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. Boiled down to smaller chunks, it can be described with the following conditions:
+This theme is released under the terms of the Mozilla Public License, v. 2.0 and is a copyright of [Symplectic](http://symplectic.co.uk). If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. Boiled down to smaller chunks, it can be described with the following conditions:
 
 ###This licence allows you to:
 * Freely download, modify and use the Symplectic Bootstrap theme, in whole or in part, for personal, company internal or commercial purposes.
